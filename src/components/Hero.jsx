@@ -43,7 +43,7 @@ function Navbar() {
       <a href="#contact" className="group flex items-center gap-3">
         <span className="hidden font-inter text-xs font-medium uppercase tracking-[0.25em] sm:inline">// Hire me</span>
         <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white transition-colors duration-300 group-hover:bg-white md:h-12 md:w-12">
-          <ArrowIcon className="h-4 w-4 text-white transition-colors duration-300 group-hover:text-[#fd2601] md:h-5 md:w-5" />
+          <ArrowIcon className="h-4 w-4 text-white transition-colors duration-300 group-hover:text-[#0b1f3a] md:h-5 md:w-5" />
         </span>
       </a>
     </nav>
@@ -74,8 +74,8 @@ function AmbientBackground() {
       </svg>
 
       {/* Glow blobs */}
-      <div className="absolute -bottom-20 -right-20 h-[300px] w-[300px] rounded-full bg-[#F4791B] opacity-60 mix-blend-screen blur-[80px]" />
-      <div className="absolute -bottom-24 -left-24 h-[300px] w-[600px] max-w-[120vw] rounded-full bg-[#F4791B] opacity-60 mix-blend-screen blur-[80px]" />
+      <div className="absolute -bottom-20 -right-20 h-[300px] w-[300px] rounded-full bg-[#3d5a80] opacity-50 mix-blend-screen blur-[80px]" />
+      <div className="absolute -bottom-24 -left-24 h-[300px] w-[600px] max-w-[120vw] rounded-full bg-[#3d5a80] opacity-50 mix-blend-screen blur-[80px]" />
     </div>
   )
 }
@@ -85,8 +85,8 @@ function IntroText({ className = '' }) {
     <div className={`max-w-xs font-inter uppercase ${className}`}>
       <p className="mb-3 text-xs font-semibold tracking-[0.25em]">// I'm Olivia —</p>
       <p className="pl-6 text-xs leading-relaxed tracking-[0.15em] opacity-90">
-        a freelance UI/UX designer crafting bold, human-centred digital experiences for brands that want to be
-        remembered.
+        a QA engineering leader building quality strategy, test automation and high-performing teams that ship
+        with confidence.
       </p>
     </div>
   )
@@ -95,9 +95,9 @@ function IntroText({ className = '' }) {
 function Tagline({ className = '' }) {
   return (
     <p className={`font-inter text-sm font-semibold uppercase leading-relaxed tracking-[0.25em] md:text-base ${className}`}>
-      // Design that
+      // Quality that
       <br />
-      speaks your brand
+      scales with your product
     </p>
   )
 }
@@ -116,25 +116,25 @@ function BrandStrip() {
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-screen w-full flex-col overflow-hidden bg-gradient-to-b from-[#fd2601] to-[#f37e1c] text-white">
+    <section className="relative flex min-h-screen w-full flex-col overflow-hidden bg-gradient-to-b from-[#0b1f3a] via-[#13294b] to-[#1f3b5c] text-white">
       <AmbientBackground />
       <Navbar />
 
       {/* Main stage */}
       <div className="relative flex flex-1 flex-col items-center justify-center px-5 pt-28 md:px-12 md:pt-24">
-        <div className="relative flex w-full items-center justify-center">
+        <div className="relative flex w-full flex-col-reverse items-center justify-center md:flex-row">
           {/* Headline */}
           <h1 className="relative z-10 text-center font-anton uppercase leading-[0.9] tracking-wide">
-            <span className="flex flex-col text-[24vw] md:hidden">
-              <span>New</span>
-              <span>Design</span>
-              <span>Era</span>
+            <span className="flex flex-col text-[17vw] md:hidden">
+              <span>QA</span>
+              <span>Engineering</span>
+              <span>Leader</span>
             </span>
-            <span className="hidden whitespace-nowrap md:block md:text-[min(12vw,180px)]">New Design Era</span>
+            <span className="hidden whitespace-nowrap md:block md:text-[min(9vw,150px)]">QA Engineering Leader</span>
           </h1>
 
           {/* Portrait with brush-stroke mask */}
-          <div className="pointer-events-none absolute left-1/2 top-1/2 z-20 w-[62vw] max-w-[380px] -translate-x-1/2 -translate-y-1/2 select-none md:w-[28vw]">
+          <div className="pointer-events-none relative z-20 -mb-[3vw] w-[48vw] max-w-[260px] select-none md:absolute md:left-1/2 md:top-1/2 md:mb-0 md:w-[19vw] md:max-w-[300px] md:-translate-x-1/2 md:-translate-y-1/2">
             <img
               src={PORTRAIT}
               alt="Portrait of Olivia"

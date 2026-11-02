@@ -5,13 +5,13 @@
 html,
 body {
   @apply font-inter text-white antialiased;
-  background: linear-gradient(to bottom, #fd2601, #f37e1c);
+  background: linear-gradient(to bottom, #0b1f3a, #1f3b5c);
   min-height: 100%;
 }
 
 ::selection {
   background: #ffffff;
-  color: #fd2601;
+  color: #0b1f3a;
 }
 
 /* Rough paint-brush stroke mask for the portrait */

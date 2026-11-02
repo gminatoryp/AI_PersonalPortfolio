@@ -8,7 +8,7 @@ export default {
         inter: ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
-        brand: { red: '#fd2601', orange: '#f37e1c', glow: '#F4791B' },
+        brand: { navy: '#0b1f3a', slate: '#1f3b5c', glow: '#3d5a80' },
       },
     },
   },
