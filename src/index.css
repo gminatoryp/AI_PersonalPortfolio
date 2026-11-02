@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply font-inter text-white antialiased;
+  background: linear-gradient(to bottom, #fd2601, #f37e1c);
+  min-height: 100%;
+}
+
+::selection {
+  background: #ffffff;
+  color: #fd2601;
+}
+
+/* Rough paint-brush stroke mask for the portrait */
+.brush-mask {
+  -webkit-mask-image: url('/brush-mask.svg');
+  mask-image: url('/brush-mask.svg');
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
