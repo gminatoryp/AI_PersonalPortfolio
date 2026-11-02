@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" preserveAspectRatio="none">
+  <defs>
+    <filter id="rough" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035 0.09" numOctaves="4" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="38" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" fill="#fff">
+    <path d="M70 60 C140 20 260 30 330 55 C370 70 380 120 372 180 C365 250 385 320 370 390 C355 450 320 490 250 495 C180 500 110 505 65 470 C30 440 25 380 35 320 C45 250 20 190 30 130 C36 95 45 75 70 60 Z"/>
+    <path d="M20 200 C80 180 140 195 120 230 C100 260 40 250 20 200 Z"/>
+    <path d="M300 420 C350 410 395 430 385 470 C370 500 320 480 300 420 Z"/>
+    <path d="M90 40 C150 10 230 8 300 30 L290 50 C220 35 150 40 95 62 Z"/>
+  </g>
+</svg>
